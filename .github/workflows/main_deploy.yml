@@ -12,9 +12,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Install Packages
+      run: yarn
+
     - name: Deploy to GH Pages
       run: |
         git config --global user.name 'Vahid Ramezanipour'
         git config --global user.email 'vahidramezanipour@gmail.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        npm run deploy
+        yarn deploy
