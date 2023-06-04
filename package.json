@@ -1,5 +1,6 @@
 {
     "name": "portfolio",
+    "homepage": ".",
     "version": "0.1.0",
     "scripts": {
         "deploy": "gh-pages -d ."
