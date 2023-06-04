@@ -1,0 +1,10 @@
+{
+    "name": "portfolio",
+    "version": "0.1.0",
+    "scripts": {
+        "deploy": "gh-pages -d build"
+    },
+    "devDependencies": {
+        "gh-pages": "^5.0.0"
+    }
+}
