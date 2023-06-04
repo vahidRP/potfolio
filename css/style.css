@@ -1365,10 +1365,21 @@ header .menu-button {
     font-weight: 500; }
   .section-contact .contact-detail p {
     margin-bottom: 10px; }
-  .section-contact .contact-detail .contact-info li {
-    margin-bottom: 10px; }
+    .section-contact .contact-detail .contact-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: left;
+    }
+    @media screen and (max-width: 480px) {
+      .section-contact .contact-detail .contact-info {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
     .section-contact .contact-detail .contact-info li .title {
-      display: block;
       font-size: 18px;
       font-weight: 800;
       display: inline-block;
@@ -1481,6 +1492,11 @@ header .back-button {
     font-weight: 600; }
 
 /*======== 11. Mobile Responsive Css ========*/
+.section-home .banner-text .text-slideshow .animate-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 991px) {
   .section-home .banner-text .text-slideshow .animate-title {
     font-size: 58px; }
